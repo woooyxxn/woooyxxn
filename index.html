@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    .wrap { width: 400px; margin: auto; }
+    body {
+      background: hotpink; 
+      text-align: center;
+      padding: 10px 50px;
+      font-family: "Noto Sans KR", sans-serif;
+      font-weight: 400;}
+
+</style>
+</head>
+<body class="wrap">
+	<script>
+		a = Number(prompt("오늘 총 몇 분 걸으셨나요?")); 
+		let speedChoice = prompt("당신의 걸음 속도를 1, 2, 3 중에 골라 입력하세요. \n *1=느림, 2=평균, 3=빠름*" );
+		let speed;
+			if (speedChoice==="1"){speed=60;}
+			else if (speedChoice==="2"){speed=83;}
+			else if (speedChoice==="3"){speed=110;}
+			else {speed = 83;}
+		sum(a);
+
+	function sum(num){
+		let distance = num * speed ;
+		let rounds = distance / 0.65
+		document.body.innerHTML = 
+			"<img src = 'ham.jpg' width = '400'>" +
+			"<h1 style='color: ivory;'> 당신이 햄스터라면, 오늘 <br> 약 " + 
+			"<span style='color: white; text-decoration: underline; font-size: inherit;'>" + rounds.toFixed(0) + "</span>바퀴를 도셨어요.</h1>";}
+		</script>
+</body>
+</html>
