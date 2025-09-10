@@ -20,7 +20,7 @@
 </head>
 <body class="wrap">
 	<script>
-		a = Number(prompt("오늘 총 몇 분 걸으셨나요?")); 
+		a = Number(prompt("오늘 총 몇 분 걸으셨나요? \n *숫자만 입력해주세요*" )); 
 		let speedChoice = prompt("당신의 걸음 속도를 1, 2, 3 중에 골라 입력하세요. \n *1=느림, 2=평균, 3=빠름*" );
 		let speed;
 			if (speedChoice==="1"){speed=60;}
@@ -34,8 +34,8 @@
 		let rounds = distance / 0.65
 		document.body.innerHTML = 
 			"<img src = 'ham.jpg' width = '400'>" +
-			"<h1 style='color: ivory;'> 당신이 햄스터라면, 오늘 <br> 약 " + 
-			"<span style='color: white; text-decoration: underline; font-size: inherit;'>" + rounds.toFixed(0) + "</span>바퀴를 도셨어요.</h1>";}
+			"<h1 style='color: ivory;'> 당신이 햄스터라면, <br> 오늘 쳇바퀴를 <br> 약 " + 
+			"<span style='color: white; text-decoration: underline; font-size: inherit;'>" + rounds.toFixed(0) + "</span>바퀴 도셨어요.</h1>";}
 		</script>
 </body>
 </html>
