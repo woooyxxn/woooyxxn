@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-<style>
-	.wrap{width: 400px; margin: auto;}
-	body {background: hotpink; 
-		text-align: center;
-		padding: 10px 50px;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    .wrap { width: 400px; margin: auto; }
+    body {
+      background: hotpink; 
+      text-align: center;
+      padding: 10px 50px;
+      font-family: "Noto Sans KR", sans-serif;
+      font-weight: 400;}
 
 </style>
 </head>
@@ -27,7 +33,7 @@
 		let distance = num * speed ;
 		let rounds = distance / 0.65
 		document.body.innerHTML = 
-			"<img src = '햄.jpg'; width = '400'>" +
+			"<img src = '햄.jpg' width = '400'>" +
 			"<h1 style='color: ivory;'> 당신이 햄스터라면, 오늘 <br> 약 " + 
 			"<span style='color: white; text-decoration: underline; font-size: inherit;'>" + rounds.toFixed(0) + "</span>바퀴를 도셨어요.</h1>";}
 		</script>
